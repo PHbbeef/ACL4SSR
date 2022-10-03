@@ -8412,5 +8412,6 @@ ultrasurf
 @@||youdao.com
 @@||zhongsou.com
 @@|http://ime.baidu.jp
+||translate.googleapis.com
 !################Whitelist End##################
 !---------------------EOF-----------------------
