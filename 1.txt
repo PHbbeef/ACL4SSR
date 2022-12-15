@@ -8412,5 +8412,6 @@ ultrasurf
 @@||zhongsou.com
 @@|http://ime.baidu.jp
 ||translate.googleapis.com
+||portx.cc
 !################Whitelist End##################
 !---------------------EOF-----------------------
