@@ -8413,5 +8413,6 @@ ultrasurf
 @@|http://ime.baidu.jp
 ||translate.googleapis.com
 ||portx.cc
+||zerotier.com
 !################Whitelist End##################
 !---------------------EOF-----------------------
