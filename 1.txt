@@ -8414,5 +8414,6 @@ ultrasurf
 ||translate.googleapis.com
 ||portx.cc
 ||zerotier.com
+||translate.google.com
 !################Whitelist End##################
 !---------------------EOF-----------------------
