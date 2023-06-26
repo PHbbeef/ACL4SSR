@@ -1,0 +1,48 @@
+#http代理
+port: 7890
+#socks代理
+socks-port: 7891
+# redir-port: 7892
+# tproxy-port: 7893
+
+mixed-port: 7809
+allow-lan: true
+bind-address: "*"
+#运行模式: 规则Rule,全局Global,直连Direct
+mode: rule
+#log-level: silent
+log-level: info
+#管理ip和端口
+external-controller: '127.0.0.1:13778'
+#管理密码
+secret: '12345678'
+proxies:
+  - {
+      name: 科学上网,
+      server: www.20220829.tk,
+      port: 2053,
+      type: vmess,
+      uuid: bee66a33-6b98-4161-d8ce-1350d835df57,
+      alterId: 0,
+      cipher: auto,
+      tls: true,
+      skip-cert-verify: false,
+      servername: www.20220829.tk,
+      network: ws,
+      ws-opts:
+        {
+          path: /,
+          headers: { Host: www.20220829.tk }
+        }
+    }
+
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - DIRECT
+      - 科学上网
+
+rules:
+- DOMAIN-SUFFIX,steamcommunity.com,🚀 节点选择
+ 
