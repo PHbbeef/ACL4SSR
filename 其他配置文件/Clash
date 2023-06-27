@@ -19,21 +19,9 @@ secret: '12345678'
 proxies:
   - {
       name: 科学上网,
-      server: www.20220829.tk,
-      port: 2053,
-      type: vmess,
-      uuid: bee66a33-6b98-4161-d8ce-1350d835df57,
-      alterId: 0,
-      cipher: auto,
-      tls: true,
-      skip-cert-verify: false,
-      servername: www.20220829.tk,
-      network: ws,
-      ws-opts:
-        {
-          path: /,
-          headers: { Host: www.20220829.tk }
-        }
+      server: 127.0.0.1,
+      port: 10808,
+      type: socks5,
     }
 
 proxy-groups:
@@ -41,7 +29,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - 科学上网
+      - 科学上网 
 
 rules:
 - DOMAIN-SUFFIX,steamcommunity.com,🚀 节点选择
